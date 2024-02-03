@@ -20,6 +20,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.SAPPHIRE.get());
                         output.accept(ModItems.RAW_SAPPHIRE.get());
                         output.accept(ModItems.RED_CAP.get());
+                        output.accept(ModItems.BROWN_CAP.get());
                     }))
                     .build());
 

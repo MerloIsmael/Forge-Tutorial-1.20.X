@@ -60,6 +60,7 @@ public class TutorialMod {
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.RAW_SAPPHIRE);
             event.accept(ModItems.RED_CAP);
+            event.accept(ModItems.BROWN_CAP);
         }
     }
 
