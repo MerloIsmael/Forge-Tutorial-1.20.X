@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.modinglord.tutorialmod.TutorialMod;
+import net.modinglord.tutorialmod.block.ModBlocks;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -17,10 +18,16 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE.get()))
                     .title(Component.translatable("creativetab.tutorial_tab"))
                     .displayItems(((itemDisplayParameters, output) -> {
+                        // ITEMS
                         output.accept(ModItems.SAPPHIRE.get());
                         output.accept(ModItems.RAW_SAPPHIRE.get());
                         output.accept(ModItems.RED_CAP.get());
                         output.accept(ModItems.BROWN_CAP.get());
+
+                        // BLOCKS
+                        output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+
                     }))
                     .build());
 
