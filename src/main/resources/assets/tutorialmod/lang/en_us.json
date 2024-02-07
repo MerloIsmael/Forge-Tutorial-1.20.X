@@ -4,9 +4,17 @@
   "item.tutorialmod.raw_sapphire": "Raw Sapphire",
   "item.tutorialmod.red_cap": "Red Cap",
   "item.tutorialmod.brown_cap": "Brown Cap",
+  "item.tutorialmod.metal_detector": "Metal Detector",
+  "item.tutorialmod.strawberry": "Strawberry",
+  "item.tutorialmod.uranium_cell": "Uranium Cell",
 
   "block.tutorialmod.sapphire_block": "Block of Sapphire",
   "block.tutorialmod.raw_sapphire_block": "Block of Raw Sapphire",
+  "block.tutorialmod.sapphire_ore": "Sapphire Ore",
+  "block.tutorialmod.sound_block": "Sound Block",
+
+  "tutorialmod.metal_detector.tooltip": "Finds underground ores",
+
 
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }

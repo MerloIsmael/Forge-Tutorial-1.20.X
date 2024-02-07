@@ -6,6 +6,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.modinglord.tutorialmod.TutorialMod;
+import net.modinglord.tutorialmod.item.custom.FuelItem;
+import net.modinglord.tutorialmod.item.custom.MetalDetectorItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -19,6 +21,14 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BROWN_CAP = ITEMS.register("brown_cap",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(100)));
+    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
+            () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
+
+    // Fuel Items
+    public static final  RegistryObject<Item> URANIUM_CELL = ITEMS.register("uranium_cell",
+            () -> new FuelItem(new Item.Properties(), 300000000));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
