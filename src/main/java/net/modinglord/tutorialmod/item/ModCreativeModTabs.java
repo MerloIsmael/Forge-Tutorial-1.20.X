@@ -26,12 +26,25 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.METAL_DETECTOR.get());
                         output.accept(ModItems.STRAWBERRY.get());
                         output.accept(ModItems.URANIUM_CELL.get());
+                        output.accept(ModItems.HERBALIST_TOOL.get());
 
                         // BLOCKS
                         output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.SAPPHIRE_ORE.get());
                         output.accept(ModBlocks.SOUND_BLOCK.get());
+
+                        // SPECIAL BLOCKS
+
+                        output.accept(ModBlocks.SAPPHIRE_WALL.get());
+                        output.accept(ModBlocks.SAPPHIRE_SLAB.get());
+                        output.accept(ModBlocks.SAPPHIRE_FENCE.get());
+                        output.accept(ModBlocks.SAPPHIRE_FENCE_GATE.get());
+                        output.accept(ModBlocks.SAPPHIRE_DOOR.get());
+                        output.accept(ModBlocks.SAPPHIRE_BUTTON.get());
+                        output.accept(ModBlocks.SAPPHIRE_TRAP_DOOR.get());
+                        output.accept(ModBlocks.SAPPHIRE_STAIR.get());
+                        output.accept(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
 
                     }))
                     .build());

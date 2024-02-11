@@ -26,10 +26,16 @@ public class ModItems {
     public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
             () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
 
+
+
     // Fuel Items
     public static final  RegistryObject<Item> URANIUM_CELL = ITEMS.register("uranium_cell",
             () -> new FuelItem(new Item.Properties(), 300000000));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
+
+    // 3D ITEMS
+    public static final RegistryObject<Item> HERBALIST_TOOL = ITEMS.register("herbalist_tool",
+            () -> new Item(new Item.Properties().stacksTo(1)));
 }
